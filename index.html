@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | DecodeLabs Intern</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="logo">Student Portal</div>
+    <button id="mobile-menu-btn" class="menu-btn" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <nav id="sidebar-nav" class="site-nav">
+    <ul class="nav-links">
+      <li><a href="#" class="active">Dashboard</a></li>
+      <li><a href="#">Grades</a></li>
+      <li><a href="#">Attendance</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+
+  <main class="site-main">
+    <section class="hero">
+      <h1>Welcome Back</h1>
+      <p>Check your grades and academic progress seamlessly across any device.</p>
+    </section>
+
+    <section class="admin-panel"
+      style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <h2 style="margin-bottom: 1rem; color: var(--mocha-mousse);">Add New Subject Record</h2>
+      <form id="subject-form" style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end;">
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; flex: 1; min-width: 200px;">
+          <label for="subject-name" style="font-weight: 500;">Subject Name:</label>
+          <input type="text" id="subject-name" placeholder="e.g., Chemistry" required
+            style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.5rem; flex: 1; min-width: 100px;">
+          <label for="subject-grade" style="font-weight: 500;">Grade:</label>
+          <input type="text" id="subject-grade" placeholder="e.g., A" required
+            style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+        <button type="submit"
+          style="background-color: var(--mocha-mousse); color: white; border: none; padding: 0.6rem 1.5rem; border-radius: 4px; cursor: pointer; font-weight: bold;">Submit
+          to Backend</button>
+      </form>
+    </section>
+    <section class="subjects">
+      <h2>Your Subjects</h2>
+
+      <div class="subject-container">
+        <article class="card">
+          <h3>Physics</h3>
+          <p class="grade">Grade: A</p>
+        </article>
+
+        <article class="card">
+          <h3>Mathematics</h3>
+          <p class="grade">Grade: A+</p>
+        </article>
+
+        <article class="card">
+          <h3>Computer Science</h3>
+          <p class="grade">Grade: B+</p>
+        </article>
+
+        <article class="card">
+          <h3>English</h3>
+          <p class="grade">Grade: A-</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Student Portal | Powered by DecodeLabs</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
