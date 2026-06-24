@@ -1,4 +1,4 @@
-# DecodeLabs Internship - Project 4
+# DecodeLabs Internship 
 
 ## Student Grade Portal
 
